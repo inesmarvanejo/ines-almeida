@@ -1,470 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta
-      name="description"
-      content="Personal and professional profile of Inês Almeida."
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inês Almeida — international professional with experience across people, recruitment, operations and customer experience.">
     <title>Inês Almeida | Personal & Professional Profile</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- =====================================================
-         NAVIGATION
-    ====================================================== -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header class="header">
-      <nav class="navbar">
-        <a href="#home" class="logo"> IA. </a>
-
-        <div class="nav-links">
-          <a href="#about"> Who I Am </a>
-
-          <a href="#experience"> Experience </a>
-
-          <a href="#why-me"> Why Hire Me? </a>
-
-          <a href="#contact"> Contact </a>
-        </div>
-
-        <a
-          href="./assets/documents/Ines-Almeida-CV.pdf"
-          class="nav-cv"
-          download="Ines-Almeida-CV.pdf"
-        >
-          Download CV ↓
-        </a>
-      </nav>
+        <a class="logo" href="#home" aria-label="Back to home">IA.</a>
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#why-me">Why me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="header-cv" href="./assets/documents/Ines-Almeida-CV.pdf" download="Ines-Almeida-CV.pdf">Download CV</a>
     </header>
 
     <main>
-      <!-- =====================================================
-             PAGE 01
-             HERO + WHO I AM
-        ====================================================== -->
-
-      <section id="home" class="page page-one">
-        <!-- Interactive mouse glow -->
-        <div class="hero-glow" aria-hidden="true"></div>
-
-        <div class="container">
-          <!-- HERO -->
-
-          <div class="hero">
-            <div class="hero-main">
-              <span class="eyebrow"> PERSONAL & PROFESSIONAL PROFILE </span>
-
-              <h1>
-                Inês
-                <span>Almeida.</span>
-              </h1>
-
-              <p class="hero-title">People. Business. Growth.</p>
-
-              <p class="hero-description">
-                Internationally experienced professional with a background
-                across customer experience, recruitment and operations.
-              </p>
-
-              <div class="hero-actions">
-                <a href="#experience" class="button button-dark">
-                  Explore my experience
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/inessmalmeida/"
-                  class="button button-light"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn ↗
-                </a>
-              </div>
+        <section class="page-one" id="home">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="shell hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">PERSONAL &amp; PROFESSIONAL PROFILE</p>
+                    <h1>Inês <span>Almeida.</span></h1>
+                    <p class="hero-tagline">People. Business. Growth.</p>
+                    <p class="hero-description">Internationally experienced professional with a background across customer experience, recruitment and operations.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#experience">Explore my experience</a>
+                        <a class="button button-light" href="https://www.linkedin.com/in/inessmalmeida/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero-meta" aria-label="Profile highlights">
+                    <div><span>Based in</span><strong>Portugal</strong></div>
+                    <div><span>International experience</span><strong>United Kingdom</strong></div>
+                    <div><span>Languages</span><strong>PT · EN · DE</strong></div>
+                </div>
             </div>
 
-            <!-- HERO DETAILS -->
+            <div class="shell">
+                <section class="about section-block" id="about">
+                    <div class="section-heading">
+                        <p class="section-label">WHO I AM</p>
+                        <h2>A little more <span>about me.</span></h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-copy">
+                            <p><strong>Hi, I'm Inês.</strong> Originally from Lisbon, Portugal, I moved to the UK at 19 to pursue my studies. What started as an academic journey quickly became a life-changing experience, leading me to build my career and spend several years living and working in the UK.</p>
+                            <p>Those experiences shaped who I am today — adaptable, resilient, curious, and comfortable stepping into new environments and challenges.</p>
+                        </div>
+                        <div class="profile-photo" data-photo-frame>
+                            <img src="./assets/images/ines.jpg" alt="Portrait of Inês Almeida" data-profile-photo>
+                            <div class="photo-placeholder" aria-hidden="true"><span>PHOTO</span><small>assets/images/ines.jpg</small></div>
+                        </div>
+                    </div>
+                </section>
 
-            <div class="hero-details">
-              <div>
-                <span> Based in </span>
+                <section class="section-block compact-section" aria-labelledby="glance-title">
+                    <div class="section-heading compact-heading"><p class="section-label" id="glance-title">AT A GLANCE</p></div>
+                    <div class="info-panel glance-panel">
+                        <div class="glance-item"><span>UK EXPERIENCE</span><strong>2016 — 2025</strong></div>
+                        <div class="glance-item"><span>EDUCATION</span><strong>Business &amp; Marketing</strong><p>University of Huddersfield</p></div>
+                        <div class="glance-item"><span>LANGUAGES</span><strong>PT · EN · DE</strong></div>
+                    </div>
+                </section>
 
-                <p>Portugal</p>
-              </div>
-
-              <div>
-                <span> International experience </span>
-
-                <p>United Kingdom</p>
-              </div>
-
-              <div>
-                <span> Languages </span>
-
-                <p>PT · EN · DE</p>
-              </div>
+                <section class="section-block compact-section" aria-labelledby="expect-title">
+                    <div class="section-heading compact-heading">
+                        <p class="section-label">WORKING STYLE</p>
+                        <h2 id="expect-title">What You Can <span>Expect From Me.</span></h2>
+                    </div>
+                    <div class="info-panel expectations-panel">
+                        <div class="expectation-item"><span>01</span><strong>Quick<br>learner</strong></div>
+                        <div class="expectation-item"><span>02</span><strong>Problem<br>solver</strong></div>
+                        <div class="expectation-item"><span>03</span><strong>Open<br>communicator</strong></div>
+                        <div class="expectation-item"><span>04</span><strong>Calm<br>under pressure</strong></div>
+                        <div class="expectation-item"><span>05</span><strong>High<br>standards</strong></div>
+                    </div>
+                </section>
             </div>
-          </div>
+        </section>
 
-          <!-- =====================================================
-                     WHO I AM
-                ====================================================== -->
+        <section class="page-two" id="experience">
+            <div class="shell">
+                <section class="section-block experience-section">
+                    <div class="section-heading">
+                        <p class="section-label">PROFESSIONAL EXPERIENCE</p>
+                        <h2>Experience built <span>across people &amp; operations.</span></h2>
+                    </div>
+                    <div class="experience-list">
+                        <article class="experience-row">
+                            <div class="experience-date">2023 — 2025</div>
+                            <div class="experience-company"><h3>DUSK.com</h3><p>Carriers &amp; Credits Executive · Leeds</p></div>
+                            <div class="experience-description">
+                                <p>Expanding beyond recruitment into operations, logistics and customer experience. I coordinated complex requests across teams, worked with national carriers and supported onboarding and daily team operations.</p>
+                                <div class="experience-takeaway"><span>WHAT I TOOK FROM THIS EXPERIENCE</span><p>Where I expanded into operations and cross-functional problem solving.</p></div>
+                            </div>
+                        </article>
+                        <article class="experience-row">
+                            <div class="experience-date">2021 — 2023</div>
+                            <div class="experience-company"><h3>Workforce People Solutions</h3><p>International Recruiter · Bolton</p></div>
+                            <div class="experience-description">
+                                <p>A global, people-driven role managing international recruitment for the UK market, from sourcing and interviews to compliance, visa preparation, client relationships and relocation support.</p>
+                                <div class="experience-takeaway"><span>WHAT I TOOK FROM THIS EXPERIENCE</span><p>Where I developed an international perspective.</p></div>
+                            </div>
+                        </article>
+                        <article class="experience-row">
+                            <div class="experience-date">2016 — 2021</div>
+                            <div class="experience-company"><h3>Nando's UK &amp; IRE</h3><p>Cashier &amp; Buddy Trainer · Halifax</p></div>
+                            <div class="experience-description">
+                                <p>Where my UK professional journey began. A fast-paced, multicultural environment that developed my communication, customer service, teamwork and training skills.</p>
+                                <div class="experience-takeaway"><span>WHAT I TOOK FROM THIS EXPERIENCE</span><p>Where I learned how to work with people.</p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
-          <div id="about" class="about">
-            <span class="section-label"> WHO I AM </span>
+                <section class="section-block learning-section" id="learning">
+                    <div class="learning-panel">
+                        <div class="learning-intro">
+                            <p class="section-label">LEARNING &amp; DEVELOPMENT</p>
+                            <h2>Always <span>learning.</span></h2>
+                            <p class="learning-description">Currently expanding my knowledge in data analytics and AI to complement my professional experience and strengthen my ability to make informed, data-driven decisions.</p>
+                        </div>
+                        <div class="learning-categories">
+                            <div class="learning-category">
+                                <div class="learning-category-head"><h3>Data &amp; Analytics</h3><span>4 courses</span></div>
+                                <div class="learning-details"><div>
+                                    <p>Learning Data Analytics: Foundations</p>
+                                    <p>Learning Data Analytics: Extending &amp; Applying Core Knowledge <em>In progress</em></p>
+                                    <p>Data Analytics for Business Professionals <em>In progress</em></p>
+                                    <p>Excel for Business Analysts <em>In progress</em></p>
+                                </div></div>
+                            </div>
+                            <div class="learning-category">
+                                <div class="learning-category-head"><h3>AI &amp; Responsible Technology</h3><span>3 courses</span></div>
+                                <div class="learning-details"><div>
+                                    <p>Responsible AI for Managers</p>
+                                    <p>Generative AI, Recruiting &amp; Talent Acquisition</p>
+                                    <p>Harnessing AI in the Recruiting Lifecycle</p>
+                                </div></div>
+                            </div>
+                            <div class="learning-category">
+                                <div class="learning-category-head"><h3>People &amp; Talent</h3><span>3 courses</span></div>
+                                <div class="learning-details"><div>
+                                    <p>Attracting, Hiring &amp; Working with Gen Z</p>
+                                    <p>Ethical AI for Hiring &amp; Talent Acquisition</p>
+                                    <p>Harnessing AI for Effective Interviewing</p>
+                                </div></div>
+                            </div>
+                        </div>
+                        <button class="learning-toggle" type="button" aria-expanded="false" data-learning-toggle><span data-learning-toggle-label>+ View all learning</span></button>
+                    </div>
+                </section>
 
-            <p>
-              Born and raised in Portugal, I moved to Leeds at 19 to pursue my
-              studies. After completing my course, I chose to extend my stay for
-              a further six years, building my professional experience across
-              the United Kingdom and growing both personally and professionally
-              along the way.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-             PAGE 02
-             EXPERIENCE + LANGUAGES
-        ====================================================== -->
-
-      <section id="experience" class="page page-two">
-        <div class="container">
-          <!-- HEADING -->
-
-          <div class="section-heading">
-            <span class="section-label"> PROFESSIONAL EXPERIENCE </span>
-
-            <h2>
-              Different environments.
-              <span>Transferable experience.</span>
-            </h2>
-          </div>
-
-          <!-- =====================================================
-                     EXPERIENCE ACCORDION
-                ====================================================== -->
-
-          <div class="experience-list">
-            <article class="experience-row">
-              <div class="experience-date">2023 — 2025</div>
-
-              <div class="experience-company">
-                <h3>DUSK.com</h3>
-
-                <span> Carriers & Credits Executive · Leeds </span>
-              </div>
-
-              <p>
-                Expanding beyond recruitment into operations, logistics and
-                customer experience. I coordinated complex requests across
-                teams, worked with national carriers and supported onboarding
-                and daily team operations.
-              </p>
-            </article>
-
-            <article class="experience-row">
-              <div class="experience-date">2021 — 2023</div>
-
-              <div class="experience-company">
-                <h3>Workforce Recruitment Group</h3>
-
-                <span> International Recruiter · Bolton </span>
-              </div>
-
-              <p>
-                A global, people-driven role managing international recruitment
-                for the UK market, from sourcing and interviews to compliance,
-                visa preparation, client relationships and relocation support.
-              </p>
-            </article>
-
-            <article class="experience-row">
-              <div class="experience-date">2016 — 2021</div>
-
-              <div class="experience-company">
-                <h3>Nando's UK & IRE</h3>
-
-                <span> Cashier & Buddy Trainer · Halifax </span>
-              </div>
-
-              <p>
-                Where my UK professional journey began. A fast-paced,
-                multicultural environment that developed my communication,
-                customer service, teamwork and training skills.
-              </p>
-            </article>
-          </div>
-
-          <!-- =====================================================
-                     LANGUAGES
-                ====================================================== -->
-
-          <div id="languages" class="languages">
-            <span class="section-label"> LANGUAGES </span>
-
-            <div class="language-row">
-              <!-- PORTUGUESE -->
-
-              <div>
-                <span> PT </span>
-
-                <h3>Portuguese</h3>
-
-                <p>Native</p>
-              </div>
-
-              <!-- ENGLISH -->
-
-              <div>
-                <span> EN </span>
-
-                <h3>English</h3>
-
-                <p>Fluent · Professional</p>
-              </div>
-
-              <!-- GERMAN -->
-
-              <div>
-                <span> DE </span>
-
-                <h3>German</h3>
-
-                <p>Currently learning</p>
-              </div>
+                <section class="section-block languages-section" aria-labelledby="languages-title">
+                    <div class="section-heading compact-heading"><p class="section-label">LANGUAGES</p><h2 id="languages-title">Communication across <span>cultures.</span></h2></div>
+                    <div class="languages">
+                        <div><span>PT</span><strong>Portuguese</strong><p>Native</p></div>
+                        <div><span>EN</span><strong>English</strong><p>Fluent · Professional</p></div>
+                        <div><span>DE</span><strong>German</strong><p>Currently learning</p></div>
+                    </div>
+                </section>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- =====================================================
-             PAGE 03
-             WHY HIRE ME + CONTACT
-        ====================================================== -->
+        <section class="page-three" id="why-me">
+            <div class="shell">
+                <section class="section-block why-section">
+                    <div class="section-heading"><p class="section-label">WHY HIRE ME?</p><h2>What you need. <span>What I bring.</span></h2></div>
+                    <div class="why-table" role="table" aria-label="What you need and what I bring">
+                        <div class="why-row why-header" role="row"><div role="columnheader">What you need</div><div role="columnheader">What I bring</div></div>
+                        <div class="why-row" role="row"><div role="cell">Someone who adapts quickly.</div><div role="cell">I moved abroad at 19 and built experience across hospitality, recruitment and operations in the UK.</div></div>
+                        <div class="why-row" role="row"><div role="cell">Someone who communicates clearly.</div><div role="cell">Years of candidate, client, customer and cross-team communication in professional environments.</div></div>
+                        <div class="why-row" role="row"><div role="cell">Someone who takes ownership.</div><div role="cell">Experience coordinating complex requests across finance, operations, management and external partners.</div></div>
+                        <div class="why-row" role="row"><div role="cell">Someone reliable.</div><div role="cell">A track record of long-term roles, added responsibilities and supporting colleagues through training and onboarding.</div></div>
+                        <div class="why-row" role="row"><div role="cell">Someone who enjoys learning.</div><div role="cell">A Business &amp; Marketing degree alongside ongoing learning in data analytics, AI and German.</div></div>
+                    </div>
+                </section>
 
-      <section id="why-me" class="page page-three">
-        <div class="container">
-          <!-- =====================================================
-                     WHY HIRE ME
-                ====================================================== -->
+                <section class="section-block beyond-work">
+                    <div class="section-heading"><p class="section-label">BEYOND WORK</p><h2>What keeps me curious <span>outside the office.</span></h2></div>
+                    <div class="beyond-table">
+                        <div class="beyond-row beyond-header"><div>Interest</div><div>What I enjoy</div></div>
+                        <div class="beyond-row"><div class="beyond-interest"><span>01</span><strong>Interior Design</strong></div><div>Spaces, details &amp; creativity.</div></div>
+                        <div class="beyond-row"><div class="beyond-interest"><span>02</span><strong>Travelling</strong></div><div>Places, cultures &amp; new perspectives.</div></div>
+                        <div class="beyond-row"><div class="beyond-interest"><span>03</span><strong>Cooking</strong></div><div>Creativity, experimenting &amp; switching off.</div></div>
+                    </div>
+                </section>
 
-          <div class="section-heading why-heading">
-            <span class="section-label"> WHY HIRE ME? </span>
-
-            <h2>
-              What you need.
-              <span>What I bring.</span>
-            </h2>
-
-            <p>
-              A snapshot of the qualities and transferable experience I can
-              bring to my next professional challenge.
-            </p>
-          </div>
-
-          <div class="why-table">
-            <!-- HEADER -->
-
-            <div class="why-row why-header">
-              <div>What you need</div>
-
-              <div>What I bring</div>
+                <section class="section-block switzerland">
+                    <div class="section-heading"><p class="section-label">WHY SWITZERLAND?</p><h2>The next <span>chapter.</span></h2></div>
+                    <div class="switzerland-copy">
+                        <p>Choosing Switzerland is about more than advancing my career — it's about building a life with purpose. After living and working abroad, I realised how important it is to find a place where I can continue to grow while putting down roots.</p>
+                        <p>Switzerland offers exactly that: a safe, well-organised and forward-thinking environment where I hope to build my future, start a family and be closer to relatives who already call it home. Professionally, I'm inspired by the country's commitment to excellence, innovation and quality, and I'm excited by the opportunity to contribute, learn and develop within such an international environment.</p>
+                    </div>
+                    <div class="info-panel switzerland-panel">
+                        <div><span>INTERNATIONAL</span><strong>MINDSET</strong></div>
+                        <div><span>LONG-TERM</span><strong>COMMITMENT</strong></div>
+                        <div><span>IN PROGRESS</span><strong>German</strong></div>
+                    </div>
+                </section>
             </div>
 
-            <!-- ADAPTABILITY -->
+            <section class="contact" id="contact">
+                <div class="shell contact-inner">
+                    <div>
+                        <p class="section-label">LET'S CONNECT</p>
+                        <h2>Let's talk about <span>what comes next.</span></h2>
+                        <p class="contact-copy">Open to opportunities where I can contribute, keep learning and grow professionally.</p>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:inesmarvanejo@gmail.com">Email ↗</a>
+                        <a href="https://www.linkedin.com/in/inessmalmeida/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                        <a href="./assets/documents/Ines-Almeida-CV.pdf" download="Ines-Almeida-CV.pdf">Download CV ↓</a>
+                    </div>
+                </div>
+            </section>
 
-            <div class="why-row">
-              <div>Adaptability</div>
-
-              <div>
-                Experience across different industries, responsibilities and
-                multicultural environments.
-              </div>
-            </div>
-
-            <!-- COMMUNICATION -->
-
-            <div class="why-row">
-              <div>Communication</div>
-
-              <div>
-                Years of client, candidate, customer and team-facing
-                professional experience.
-              </div>
-            </div>
-
-            <!-- INTERNATIONAL -->
-
-            <div class="why-row">
-              <div>International perspective</div>
-
-              <div>
-                Personal, academic and professional experience built across
-                Portugal and the United Kingdom.
-              </div>
-            </div>
-
-            <!-- OWNERSHIP -->
-
-            <div class="why-row">
-              <div>Ownership</div>
-
-              <div>
-                A practical approach to taking responsibility, solving problems
-                and supporting the wider team.
-              </div>
-            </div>
-          </div>
-          <!-- =====================================================
-     WHY SWITZERLAND
-====================================================== -->
-
-          <section class="switzerland">
-            <div class="switzerland-intro">
-              <span class="section-label"> WHY SWITZERLAND? </span>
-
-              <h2>
-                The next
-                <span>chapter.</span>
-              </h2>
-            </div>
-
-            <div class="switzerland-content">
-              <p>
-                Having already built a life and career abroad, international
-                relocation is not unfamiliar to me. My years in the United
-                Kingdom taught me how much I value multicultural environments,
-                continuous learning and the challenge of adapting to a new
-                culture.
-              </p>
-
-              <p>
-                Switzerland represents the next step I would like to take — both
-                professionally and personally. I am particularly drawn to its
-                international working environment, high professional standards
-                and cultural diversity.
-              </p>
-
-              <p>
-                I am approaching this move with a long-term mindset and have
-                already started learning German as part of that commitment.
-              </p>
-            </div>
-
-            <div class="switzerland-values">
-              <div>
-                <span class="switzerland-number"> 01 </span>
-
-                <strong> International mindset </strong>
-
-                <p>Experience building a life, education and career abroad.</p>
-              </div>
-
-              <div>
-                <span class="switzerland-number"> 02 </span>
-
-                <strong> Long-term commitment </strong>
-
-                <p>
-                  A considered next step, rather than simply another
-                  destination.
-                </p>
-              </div>
-
-              <div>
-                <span class="switzerland-number"> 03 </span>
-
-                <strong> German in progress </strong>
-
-                <p>Actively developing the language as part of the move.</p>
-              </div>
-            </div>
-          </section>
-          <!-- =====================================================
-                     CONTACT
-                ====================================================== -->
-
-          <div id="contact" class="contact">
-            <div class="contact-copy">
-              <span class="section-label"> LET'S CONNECT </span>
-
-              <h2>
-                Let's talk about
-                <span>what comes next.</span>
-              </h2>
-
-              <p>
-                Open to opportunities where I can contribute, keep learning and
-                grow professionally.
-              </p>
-            </div>
-
-            <div class="contact-links">
-              <!-- EMAIL -->
-
-              <a href="mailto:inesmarvanejo@gmail.com">
-                Email
-
-                <span> ↗ </span>
-              </a>
-
-              <!-- LINKEDIN -->
-
-              <a
-                href="https://www.linkedin.com/in/inessmalmeida/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-
-                <span> ↗ </span>
-              </a>
-
-              <!-- CV -->
-
-              <a
-                href="./assets/documents/Ines-Almeida-CV.pdf"
-                download="Ines-Almeida-CV.pdf"
-              >
-                Download CV
-
-                <span> ↓ </span>
-              </a>
-            </div>
-          </div>
-
-          <!-- =====================================================
-                     FOOTER
-                ====================================================== -->
-
-          <footer>
-            <span> © Inês Almeida </span>
-
-            <a href="#home"> Back to top ↑ </a>
-          </footer>
-        </div>
-      </section>
+            <footer class="footer"><div class="shell footer-inner"><span>Inês Almeida</span><span>Personal &amp; Professional Profile</span></div></footer>
+        </section>
     </main>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
